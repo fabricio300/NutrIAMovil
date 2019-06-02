@@ -1,0 +1,54 @@
+.contenedor1{
+    /* background-color: royalblue;*/
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: auto;
+     width: 100%;
+     position:relative;
+     height: 100%;
+     flex-wrap: wrap;
+     background-image:url("../../../assets/images/bac.jpg");
+    /* background-image:url("../../assets/images/bac.jpg");*/
+     background-size: 100%;
+     background-repeat: no-repeat ;
+     background-size: cover ;
+     background-position: center ;
+ }
+ 
+ .formulario{
+     width: 80%;
+     
+     text-align: center;
+     padding: 10px;
+     
+     /*background-color: blueviolet;*/
+     
+ }
+ 
+ .espacios{
+     margin: 10px !important;
+     border-radius: 5px !important;
+     overflow: hidden !important;
+ }
+ 
+ .boton{
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 20px;
+     padding: 15px;
+     border: none;
+     width: 50%;
+     border-radius: 5px;
+     background-color: blueviolet;
+     color: white;
+ }
+ 
+ 
+ 
+ .imagenCoporativa{
+     width: 80%;
+     height: 40%;
+     background-color: rgba($color: Magenta, $alpha: 0.5);
+     color: white;
+     text-align: center;
+ }

@@ -1,0 +1,7 @@
+{
+  "name": "AppNutriaMovil",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

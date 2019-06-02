@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color=secondary>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    <ion-title>Peso actual</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contP">
+      <div class="pesoactual">
+        <h3>Peso actual:</h3>
+        <h1 (click)="cooo()">77 Kl</h1>
+      </div>
+
+      <div class="contNewPeso">
+        <h5 *ngIf="!tiempoCumplido">Una vez cumplido el lapso de duración de una dieta se desbloqueara en este modulo la opción de actualizar peso</h5>
+        <form action="" class="formulario" *ngIf="tiempoCumplido"> 
+          
+            
+            <ion-item>
+              
+                <ion-input type="text" placeholder="ingresa tu Peso actual"></ion-input>
+            </ion-item>
+            <ion-button>aceptar</ion-button>
+        </form>
+      </div>
+  </div>
+</ion-content>

@@ -1,0 +1,29 @@
+.contedorDeTodo{
+   /* background-color: red;*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.alimeto{
+    width: 90%;
+    height:70px ;
+    background-color: transparent;
+    margin: 10px;
+    border-radius: 10pt;
+    border: 2px solid #EE82EE;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.alimeto:hover{
+    transition: 0.5s;
+    background: #EE82EE;
+    color: white;
+    border-color: transparent;
+}

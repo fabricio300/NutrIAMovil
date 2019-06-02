@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    <ion-title>alimentos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-fab vertical="bottom" horizontal="end"  slot="fixed">
+        <ion-fab-button (click)="mostrarInfo()">
+            <ion-icon name="help" *ngIf=!varia></ion-icon>
+            <ion-icon name="close" *ngIf=varia></ion-icon>
+        </ion-fab-button>          
+    </ion-fab>
+    <table class="tablaAlimentos">
+        <tr>
+            <th>  Comestible</th>
+            <th>calorias</th> 
+            <th>Cantidad</th>
+        </tr>
+
+
+        <tr>
+            <td>manzana</td>
+            <td>2</td> 
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td>manzana</td>
+            <td>2</td> 
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td>manzana</td>
+            <td>2</td> 
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td>manzana</td>
+            <td>2</td> 
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>manzana</td>
+            <td>2</td> 
+            <td>3</td>
+        </tr>
+          
+    </table>
+
+
+    
+
+
+    <div class="contenedorTablaInfo" *ngIf="varia" >
+
+       
+        <table class="tablaIbfo">
+            <tr>
+              <th>Informacion</th>  <th>valor</th>
+            </tr>
+            <tr>
+              <td> Grasas</td> <td>12%</td>
+            </tr>
+            <tr>
+                <td>Kcal</td> <td>20</td>
+              </tr>
+              <tr>
+                  <td> Carbohidratos</td> <td>??</td>
+                </tr>
+                <tr>
+                    <td> Lipidos</td><td>??</td>
+                  </tr>
+                  <tr>
+                      <td> Proteinas</td><td>??</td>
+                    </tr>
+      
+          </table>
+    </div>
+
+    
+
+
+    
+</ion-content>
