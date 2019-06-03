@@ -12,4 +12,10 @@ export class InicioPage implements OnInit {
   ngOnInit() {
   }
 
+  ionViewDidEnter() {
+    document.addEventListener("backbutton",function(e) {
+      console.log("disable back button")
+    }, false);
+}
+
 }
