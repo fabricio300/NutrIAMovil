@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'inicio', loadChildren: './pages/inicio/inicio.module#InicioPageModule' },
   { path: 'alimentos', loadChildren: './pages/alimentos/alimentos.module#AlimentosPageModule' },
   { path: 'historial', loadChildren: './pages/historial/historial.module#HistorialPageModule' },
+  { path: 'modal', loadChildren: './pages/modal/modal.module#ModalPageModule' },
 ];
 
 @NgModule({

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Inforamción nutricional del {{alimento}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+
+    <div class="contenedorTablaInfo"  >
+
+       
+        <table class="tablaIbfo">
+            <tr>
+              <th>Informacion</th>  <th>valor</th>
+            </tr>
+            <tr>
+              <td> Grasas</td> <td>{{info.grasa}}%</td>
+            </tr>
+            <tr>
+                <td>Kcal</td> <td>{{info.ckal}}</td>
+              </tr>
+              <tr>
+                  <td> Carbohidratos</td> <td>{{info.carbohidratos}}</td>
+                </tr>
+                <tr>
+                    <td> Lipidos</td><td>{{info.lipidos}}</td>
+                  </tr>
+                  <tr>
+                      <td> Proteinas</td><td>{{info.proteinas}}</td>
+                    </tr>
+      
+          </table>
+    </div>
+
+</ion-content>

@@ -12,9 +12,9 @@
 
    
     <ion-fab vertical="bottom" horizontal="end"  slot="fixed">
-        <ion-fab-button (click)="mostrarInfo()">
-            <ion-icon name="help" *ngIf=!varia></ion-icon>
-            <ion-icon name="close" *ngIf=varia></ion-icon>
+        <ion-fab-button (click)="iramodal()">
+            <ion-icon name="help" ></ion-icon>
+            
         </ion-fab-button>          
     </ion-fab>
     <div class="conteimagen">
@@ -64,31 +64,7 @@
     
 
 
-    <div class="contenedorTablaInfo" *ngIf="varia" >
-
-       
-        <table class="tablaIbfo">
-            <tr>
-              <th>Informacion</th>  <th>valor</th>
-            </tr>
-            <tr>
-              <td> Grasas</td> <td>12%</td>
-            </tr>
-            <tr>
-                <td>Kcal</td> <td>20</td>
-              </tr>
-              <tr>
-                  <td> Carbohidratos</td> <td>??</td>
-                </tr>
-                <tr>
-                    <td> Lipidos</td><td>??</td>
-                  </tr>
-                  <tr>
-                      <td> Proteinas</td><td>??</td>
-                    </tr>
-      
-          </table>
-    </div>
+    
 
     
 </div> 

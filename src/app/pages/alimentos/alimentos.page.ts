@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { ModalPage } from '../modal/modal.page'
 
 @Component({
   selector: 'app-alimentos',
@@ -7,13 +9,14 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./alimentos.page.scss'],
 })
 export class AlimentosPage implements OnInit {
-  varia = false;
+
   tipoalimento=""
   alimento=""
   urlImagen=""
 
   constructor(
-    private rutaActiva: ActivatedRoute
+    private rutaActiva: ActivatedRoute,
+    private modalController:ModalController
   ) { }
 
   ngOnInit() {
@@ -39,12 +42,29 @@ export class AlimentosPage implements OnInit {
     }
   }
 
-  mostrarInfo(){
-    if(this.varia==true){
-      this.varia=false;
-    }else{
-      this.varia=true;
+ 
+
+  async iramodal(){
+    let ro={
+        grasa:12,
+        ckal:17,
+        carbohidratos:50,
+        lipidos:14,
+        proteinas:40
+      }
+    
+    const modal = await this.modalController.create({
+      component: ModalPage,
+      cssClass: 'modal',
+      componentProps: { 
+        alimento: this.alimento,
+        info:ro,
+      },
+      
     }
+    
+    );
+    return await modal.present();
   }
 
   

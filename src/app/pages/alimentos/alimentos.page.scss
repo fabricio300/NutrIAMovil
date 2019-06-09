@@ -29,43 +29,7 @@
 }
 
 
-.tablaIbfo{
-    border:none;
-    width: 80%;
-    font-size: 15px;
-   
-}
 
-.tablaIbfo::content th{
-    background-color: #555555;
-    font-family: Arial ;
-    border: 1px solid white;
-    color: white;
-    //height:50px;
-}
-
-
-.tablaIbfo::content td{
-    text-align: center;
-    background-color: black;
-    color: white;
-    height:50px;
-    border: 1px solid white;
-}
-
-.contenedorTablaInfo{
-    position:absolute;
-    bottom: 0px;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    background-color: rgba($color:grey, $alpha: 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-   
-}
 
 
 .conteimagen{
