@@ -1,5 +1,7 @@
 .contenedor1{
     /* background-color: royalblue;*/
+    position:absolute;
+    top: 0px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -9,10 +11,10 @@
      height: 100%;
      flex-wrap: wrap;
      background-image:url("../../../assets/images/5/appetizer-bowls-cuisine-1640770.jpg");
-  
-  
+     background-size: 100%;
+     background-repeat: no-repeat ;
      background-size: cover ;
-     background-position: center ;
+     background-position:top;
  }
  
  .formulario{
@@ -50,4 +52,15 @@
      background-color: rgba($color: Magenta, $alpha: 0.5);
      color: white;
      text-align: center;
+ }
+
+ @media(max-width:600px){
+    .contenedor1{
+   
+         background-image:url("../../../assets/images/5/background-citric-citrus-1493378.jpg");
+         background-size: 100%;
+         background-repeat: no-repeat ;
+         background-size: cover ;
+         background-position:top;
+     }
  }

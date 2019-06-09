@@ -25,10 +25,10 @@ export class AlimentosPage implements OnInit {
               this.urlImagen="../../../assets/images/5/desayuno-ingles-01.jpg"
         break;
       case 2:this.alimento="Mediodía"
-              this.urlImagen="../../../assets/images/5/mediodia2.jpg"
+              this.urlImagen="../../../assets/images/5/mediodia3.jpg"
         break;
       case 3:this.alimento="Comida"
-             this.urlImagen="../../../assets/images/5/comida2.jpg"
+             this.urlImagen="../../../assets/images/5/comida.jpg"
         break;
       case 4:this.alimento="Merienda"
               this.urlImagen="../../../assets/images/5/Merienda1.jpg"
