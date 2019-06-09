@@ -16,7 +16,7 @@ const routes: Routes = [
         path:'inicio',
         loadChildren: '../inicio/inicio.module#InicioPageModule'
       },{
-        path:'alimentos',
+        path:'alimentos/:id',
         loadChildren: '../alimentos/alimentos.module#AlimentosPageModule'
       }
     ]

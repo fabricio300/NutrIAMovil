@@ -11,15 +11,18 @@ export class MenuPage implements OnInit {
 
   pages=[
     {
-      title:'inicio',
+      title:'Dieta',
+      icon: 'restaurant',
       url:'/menu/cont1'
     },
     {
       title:'historial de avance',
+      icon: 'trending-up',
       url:'/menu/historial'
     },
     {
       title:'Peso actual',
+      icon: 'stats',
       url:'/menu/peso'
     }
   ]
