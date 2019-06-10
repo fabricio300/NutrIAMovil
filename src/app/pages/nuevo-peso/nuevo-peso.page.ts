@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-nuevo-peso',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NuevoPesoPage implements OnInit {
   tiempoCumplido=false;
-
-  constructor() { }
+  formpeso:FormGroup
+  constructor(
+    private forbuild: FormBuilder
+  ) { }
 
   ngOnInit() {
+    this.formpeso=this.forbuild.group({
+      'newpeso' :['', Validators.required]
+    })
   }
 
   cooo(){

@@ -6,6 +6,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-image: url('../../../assets/images/5/scale-diet-fat-health-53404.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 .pesoactual{
@@ -41,12 +44,15 @@
 .contNewPeso{
     height: auto;
     width: 80%;
-    background-color: white;
+    background-color:rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 60px
+    font-size: 60px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .formulario{

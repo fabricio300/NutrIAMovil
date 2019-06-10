@@ -13,15 +13,19 @@
       <h1>Imagen corporativa</h1>
     </div>
 
-    <form class="formulario">
+    <form class="formulario" [formGroup]="lisformgoup">
         <ion-item class="item espacios">
-          <ion-input type="text" placeholder="Correo"></ion-input><br>
+          <ion-input  formControlName="correo" type="text" placeholder="Correo"></ion-input><br>
+          <span *ngIf="lisformgoup.get('correo').touched && lisformgoup.get('correo').hasError('required')" style="font-size: 13px; color:red;" >Campo requrido</span>
+      
         </ion-item>
         <ion-item class="item espacios">
-          <ion-input type="password"  placeholder="Contraseña"></ion-input><br>
+          <ion-input  formControlName="password" type="password"  placeholder="Contraseña"></ion-input><br>
+          <span *ngIf="lisformgoup.get('password').touched && lisformgoup.get('password').hasError('required')" style="font-size: 13px; color:red;" >Campo requrido</span>
+      
         </ion-item>
     
-            <button class="boton"  routerLink="/menu/cont1">Aceptar</button>
+            <button class="boton"  (click)="ir()" [disabled]="lisformgoup.invalid">Aceptar</button>
        
       
     

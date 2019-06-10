@@ -16,14 +16,16 @@
 
       <div class="contNewPeso">
         <h5 *ngIf="!tiempoCumplido">Una vez cumplido el lapso de duración de una dieta se desbloqueara en este modulo la opción de actualizar peso</h5>
-        <form action="" class="formulario" *ngIf="tiempoCumplido"> 
+        <form [formGroup]="formpeso" class="formulario" *ngIf="tiempoCumplido" > 
           
             
             <ion-item>
               
-                <ion-input type="text" placeholder="ingresa tu Peso actual"></ion-input>
+                <ion-input formControlName="newpeso" type="number" placeholder="ingresa tu Peso actual"></ion-input>
+                <span *ngIf="formpeso.get('newpeso').touched && formpeso.get('newpeso').hasError('required')" style="font-size: 13px; color:red;" >Campo requrido</span>
+      
             </ion-item>
-            <ion-button>aceptar</ion-button>
+            <ion-button [disabled]="formpeso.invalid">aceptar</ion-button>
         </form>
       </div>
   </div>

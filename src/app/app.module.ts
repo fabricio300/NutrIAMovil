@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import {ModalPage} from '../app/pages/modal/modal.page'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent,ModalPage],
@@ -17,6 +18,8 @@ import {ModalPage} from '../app/pages/modal/modal.page'
     ModalPage
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     IonicModule.forRoot({
       hardwareBackButton: false,
   }),
