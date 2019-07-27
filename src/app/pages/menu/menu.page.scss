@@ -5,5 +5,29 @@
 .contenedorimagen{
     width: 100%;
     height: 200px;
-    overflow: hidden;
+    
+    position: relative;
+    
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.centrar::content h1{
+    background-color: rgba($color: 	#00BFFF, $alpha: 0.9);
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.dd{
+    background-color: rgba($color: #000000, $alpha: 0.5);
 }

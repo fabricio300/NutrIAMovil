@@ -10,7 +10,8 @@
 <ion-content >
  <div class="contenedor1">
     <div class="imagenCoporativa">
-      <h1>Imagen corporativa</h1>
+      <h1>Nutr-IA</h1>
+      <img src="../../../assets/images/icon.png" style="height: 75%;">
     </div>
 
     <form class="formulario" [formGroup]="lisformgoup">
@@ -25,7 +26,7 @@
       
         </ion-item>
     
-            <button class="boton"  (click)="ir()" [disabled]="lisformgoup.invalid">Aceptar</button>
+            <button class="boton"   [disabled]="lisformgoup.invalid" routerLink="/menu/cont1">Aceptar</button>
        
       
     
